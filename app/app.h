@@ -26,7 +26,7 @@ namespace vsite::oop::v8
 	public:
 		std::string message() const override
 		{
-			return "Operator error";
+			return "invalid operation";
 		}
 	};
 
@@ -35,7 +35,7 @@ namespace vsite::oop::v8
 	public:
 		std::string message() const override
 		{
-			return "Number error";
+			return "not a number";
 		}
 	};
 
@@ -44,7 +44,7 @@ namespace vsite::oop::v8
 	public:
 		std::string message() const override
 		{
-			return "Zero error";
+			return "divide by zero";
 		}
 	};
 }

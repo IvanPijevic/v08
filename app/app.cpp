@@ -32,22 +32,18 @@ namespace vsite::oop::v8
 		{
 		case '+':
 			return n1 + n2;
-			break;
 
 		case '-':
 			return n1 - n2;
-			break;
 
 		case '*':
 			return n1 * n2;
-			break;
 
 		case '/':
 			if (n2 == 0) {
 				throw divide_zero();
 			}
 			return static_cast<double>(n1) / n2;
-			break;
 
 		default:
 			throw not_operator();
